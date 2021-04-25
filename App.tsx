@@ -3,6 +3,7 @@ import React from 'react';
 import AppLoading from 'expo-app-loading';
 
 import { Welcome } from './src/pages/Welcome';
+import { UserIdentification } from './src/pages/UserIdentification';
 import {
   useFonts,
   Jost_400Regular,
@@ -20,7 +21,8 @@ export default function App() {
   return (
     <>
     <StatusBar/>
-    <Welcome/>
+    {/* <Welcome/> */}
+    <UserIdentification/>
     </>
     );
 }
