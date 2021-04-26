@@ -1,5 +1,6 @@
 import React from 'react';
 import { View,SafeAreaView,StyleSheet, Text, TextInput } from 'react-native';
+import {Button} from '../components/Button';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
@@ -15,8 +16,12 @@ export function UserIdentification() {
                 Como podemos {'\n'}
                 chamar você?
             </Text>
-            <TextInput style={styles.input}>
-            </TextInput>
+            <TextInput placeholder="Digite seu nome"
+            style={styles.input}
+            />
+            <View style={styles.footer}>
+                <Button/>
+            </View>
         </View>
       </View>
 
@@ -38,9 +43,16 @@ const styles = StyleSheet.create({
     },
     form: {
         flex: 1,
+        width: '100%',
         justifyContent: 'center',
         paddingHorizontal: 54,
         alignItems: 'center',
+
+    },
+    footer: {
+        marginTop:40,
+        width: '100%',
+        paddingHorizontal: 20,
 
     },
     title: {
